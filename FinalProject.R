@@ -7,7 +7,10 @@
 ### Fenson, Derek
 ### Knopf, Michael
 
-
+#install.packages("rpart.plot")
+#install.packages("XML")
+#install.packages("class")
+#install.packages("maps")
 library(rpart.plot)
 library("XML")
 library("class")
@@ -516,7 +519,7 @@ colnames(unemploy.error.types.knn) = c('1st Quartile', '2nd Quartile',
 barplot(unemploy.error.types.knn, beside = TRUE, col = c('red','blue'),
         main = 'Error rates for Counties by Unemployment Quartile (knn)',
         xlab = 'Unemployment Quartile', ylab = 'Error Rate')
-legend('topright', fill = c('red','blue'),
+legend('topleft', fill = c('red','blue'),
        legend = c('Error in Favor of Bush','Error in Favor of Kerry'),
        bty = 'n', cex = 0.7)
 
