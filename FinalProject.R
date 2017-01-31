@@ -7,6 +7,7 @@
 ### Fenson, Derek
 ### Knopf, Michael
 
+#install.packages("rpart")
 #install.packages("rpart.plot")
 #install.packages("XML")
 #install.packages("class")
